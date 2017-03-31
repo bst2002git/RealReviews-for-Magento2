@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+	    
+        <referenceContainer name="content">
+            <referenceBlock name="product.info.details">
+                <block class="MS\RealReviews\Block\Review" name="product.info.product_additional_data" as="product_additional_data" template="product/view/list.phtml"/>
+            </referenceBlock>
+        </referenceContainer>
+        
+        <referenceBlock name="product.info.product_additional_data" remove="true" />
+
+    </body>
+</page>
+
+
+
+
